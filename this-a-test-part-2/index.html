@@ -1,0 +1,38 @@
+<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width, initial-scale=1"><meta name=description><meta name=author><link rel=icon href=../favicon.ico><title>summer sixteen</title><link rel=stylesheet type=text/css href=../css/style.min.css><!--Smooth font loading--><script type=text/javascript>
+        !function(e,t,n,a,r,s,l,p){n&&(s=n[a],s&&(l=e.createElement("style"),l.innerHTML=s,e.getElementsByTagName("head")[0].appendChild(l)),p=t.setAttribute,t.setAttribute=function(e,l,u,i){"string"==typeof l&&l.indexOf(r)>-1&&(u=new XMLHttpRequest,u.open("GET",l,!0),u.onreadystatechange=function(){4===u.readyState&&(i=u.responseText.replace(/url\(\//g,"url("+r+"/"),i!==s&&(n[a]=i))},u.send(null),t.setAttribute=p,s)||p.apply(this,arguments)})}(document,Element.prototype,localStorage,"tk","https://use.typekit.net");
+    </script><script>
+      (function(d) {
+        var config = {
+          kitId: 'tsk8lnv',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script><meta name=generator content="Gulp 3.9.0"><link rel=alternate type=application/rss+xml title="Pete Smaluck" href=../rss.xml></head><body><div class=container><div id=pre-header><div class=sticky-header><div class=header-container><nav><a href="../">Writings</a> <a href=../about>About</a></nav></div></div></div><article><h1 class=title>summer sixteen</h1><span class=date>31 January 2016</span><div class=body-text><p><img src=../images/fehn.jpg alt=fehn></p><h3 id=caption-letters>caption letters</h3></div></article><footer><p id=footer-title><span id=number></span><span id=isPrime></span></p><p id=footer-text><a href=http://twitter.com/petesmaluck target=_blank>twitter</a> <a href=http://github.com/petesmaluck target=_blank>github</a></p></footer><script>
+    
+      var number;
+    
+      function getRandomInt(min, max) {
+          return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+    
+      function isPrime(n) {
+        return !(Array(n + 1).join(1).match(/^1?$|^(11+?)\1+$/));
+      }
+    
+      function changeContent () {
+          number = getRandomInt(0, 1000);
+          var myelement = document.getElementById("number");
+          myelement.innerHTML= number;
+    
+          if (isPrime(number) === false) {
+            var myelement = document.getElementById("isPrime");
+            myelement.innerHTML= " is not a prime <span style='color: red;'>&#9747;</span>";
+          } else {
+            var myelement = document.getElementById("isPrime");
+            myelement.innerHTML= " is a prime number <span style='color: green;'>&#10003;</span>";
+          }
+      }
+      window.onload = changeContent ;
+    </script></div><script type=text/javascript src=../js/combined.min.js></script></body></html>
